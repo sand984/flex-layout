@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+            display: grid;
+            height: 100vh;
+            border: 2px solid black;
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-rows: 0.5fr 0.5fr 1.5fr 0.8fr fr;
+            grid-template-areas: 
+            "Header Menu Menu Menu "
+            "Hero Hero Hero Hero"
+            "Main Main s1 image"
+            "Main Main s1 Even"
+            
+            "footer footer footer footer";
+             text-align: center;
+             
+
+        }
+       
+       .Header{
+               background-color: aqua;
+               grid-area: Header;
+       }
+       .Menu{
+               background-color: rgb(89, 255, 0);
+               grid-area: Menu;
+       }
+       #Hero{
+               background-color: rgb(227, 15, 224);
+               grid-area: Hero;
+       }
+       #Main{
+               background-color: rgb(245, 59, 13);
+               grid-area: Main;
+               
+       }
+       .image{
+               background-color: rgb(123, 109, 125);
+               grid-area: image;
+       }
+       .Even{
+               background-color: rgb(231, 238, 18);
+               grid-area: Even;
+       }
+       #footer{
+               background-color: rgb(183, 198, 198);
+               grid-area: footer;
+       }
+       .s1{
+        background-color: azure;
+        grid-area: s1;
+       }
+    </style>
+</head>
+<body>
+   <div class="container">
+   <nav class="Header">header</nav>
+   <div class="Menu">Menu</div>
+   <div id="Hero">Hero</div>
+   <div id="Main">Main</div>
+   <div class="image">image</div>
+   <div class="s1"></div>
+   <div class="Even">Even</div>
+   <div id="footer">header</div>
+   
+    
+    </div>
+
+</body>
+</html>

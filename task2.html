@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            
+            display: grid;
+            height: 50vh;
+            border: 2px solid black;
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "sidebar main main main"
+         }
+         nav{
+            background-color: aqua;
+            grid-area: nav;
+         }
+         main{
+            background-color: aquamarine;
+            grid-area: main;
+         }
+         .Sidebar{
+               background-color: palevioletred;
+         }
+         .child1{
+            background-color: blueviolet;
+         }
+         .child2{
+            background-color: burlywood;
+         }
+         .child3{
+            background-color: chartreuse;
+         }
+         .footer{
+            background-color: aquamarine;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <nav>Nav Bar</nav>
+     <main>Main</main>
+     <div class="Sidebar">Sidebar</div>
+     <div class="child1">sandeep</div>
+     <div class="child2">sandeep</div>
+     <div class="child3">sandeep</div>
+     <div class="footer">footer</div>
+    </div>
+</body>
+</html>
+<input type="search" name="search" placeholder="SEARCH" width="">
